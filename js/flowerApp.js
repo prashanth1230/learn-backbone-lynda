@@ -29,3 +29,24 @@ flowerGroup.add(heirloomRoses);
 flowerGroup.remove(redRoses);
 
 console.log(flowerGroup.toJSON());
+
+//Exercise
+var tantalizingTulips = new app.singleFlower({
+    name: 'Tantalizing Tulips',
+    price: 9,
+    color: 'pink'
+});
+
+tantalizingTulips.set('originCountry', 'Holland');
+
+var fleurDeLis = new app.singleFlower({
+    name: 'Fleur-de-lis',
+    price: 90,
+    color: 'red'
+});
+
+var europeanFlowerGroup = new app.EuropeanFlower([
+    tantalizingTulips, fleurDeLis
+]);
+
+console.log(europeanFlowerGroup.toJSON());
